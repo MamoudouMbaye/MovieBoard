@@ -1,0 +1,118 @@
+/* Ajout de la police PT Sans */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body {
+  font-family: 'PT Sans', serif;
+}
+/* Style du header */
+.header {
+  background-color: #FFFBE1;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 6px 4px #00000085;
+  position: relative;
+}
+/* Style du bandeau rouge en haut */
+.redBanner{
+    width: 100%;
+    height: 100px;
+    background: rgb(204,0,38);
+    background: linear-gradient(180deg, rgba(204,0,38,1) 0%, rgba(102,0,19,1) 100%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+.redBanner .container{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+}
+/* Style du bouton de retour */
+.redBanner a{
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:0;
+  }
+.redBanner a:hover, .redBanner a:focus{
+    background-color: #ffffff1a;
+    box-shadow: inset 0 0 5px 1px white;
+    text-shadow: 0 0 5px white;
+  }
+/* Style du titre du film */
+.redBanner h1{      
+    font-size: 30px;
+    text-align: center;
+  } 
+/* Style du logo La boîte à films */
+.header img{
+  width: 400px;
+  display: block;
+  margin:auto; 
+}
+/* Style du footer */
+.footer {
+  background-color: #000;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+}
+.footer>div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+/* Style du logo TMDB */
+.footer img{
+  width: 400px
+}
+/* Style du Copyright */
+.footer p{
+  margin: 10px 0 0 auto;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+/* Ajustement pour la version mobile */ 
+@media screen and (max-width: 640px){
+  .header{    
+    height: 150px;
+  }
+  .header img{
+    width: 250px;
+  }
+  .footer img{
+    width: 250px
+  }
+}
+
+.btnGreen{
+    border: 2px solid #00A205;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: #00A205;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+.btnGreen:hover, .btnGreen:focus{
+    background-color: #00A2051a;
+    box-shadow: inset 0 0 5px 1px #00A205;
+    text-shadow: 0 0 5px #00A205;
+}

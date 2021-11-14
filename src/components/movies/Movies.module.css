@@ -1,0 +1,59 @@
+/* Style du bandeau rouge */
+.redBanner{
+    width: 100%;
+    height: 100px;
+    background: rgb(204,0,38);
+    background: linear-gradient(180deg, rgba(204,0,38,1) 0%, rgba(102,0,19,1) 100%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+.redBanner .container{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+}
+/* Style du bouton vers la page d'ajout de film */
+.redBanner a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    width: 170px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.redBanner a:focus, .redBanner a:hover{
+    background-color: #ffffff1a;
+    box-shadow: inset 0 0 5px 1px white;
+    text-shadow: 0 0 5px white;
+}
+/* Style de section des films present dans movie-board-server*/
+.moviesList{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+/* Ajustement pour la version mobile */
+@media screen and (max-width: 640px){
+    .redBanner{
+        height: 250px;
+    }
+    .redBanner .container{
+        justify-content: center;
+    }
+    .redBanner form{
+        margin-bottom: 15px;
+    }
+    .redBanner form input{
+        width: 100%;
+    }
+  }

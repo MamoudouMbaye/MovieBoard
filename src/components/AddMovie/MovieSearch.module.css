@@ -1,0 +1,83 @@
+/* Style des carte de film */
+.movieCard{
+    width: 340px;
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Style de l'entête de la carte de film */
+.movieHead {
+    position: relative;
+    overflow: hidden;
+}
+.movieHead img{
+    width: 100%;
+    height: 510px;
+}
+/* Style du titre du film */
+.movieDescription{
+    position: absolute;    
+    bottom: 0;
+    width: 100%;
+    transition: 0.8s ease-in-out;
+}
+.bckgrndBlur{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    top:0
+}
+.textDescription{    
+    color: white;
+    position : relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.textDescription h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 26px 0;
+}
+/* Style des informations des films */
+.movieInformations{
+    color : white;
+    padding: 10px;
+    font-size: 18px;
+}
+/* Style du bouton d'ajout */
+.movieController a{
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 16px;
+    display: block;
+}
+.btnGreen{
+    border: 2px solid #00A205;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: #00A205;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+.btnGreen:hover, .btnGreen:focus{
+    background-color: #00A2051a;
+    box-shadow: inset 0 0 5px 1px #00A205;
+    text-shadow: 0 0 5px #00A205;
+}
+/* Ajustement pour la version mobile */
+@media screen and (max-width: 640px){
+    .movieCard{
+        margin: 20px 0;
+    }
+  }

@@ -1,0 +1,161 @@
+/* Style gllobal pour des container et les h2 */
+.container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    padding: 40px 0;
+}
+h2 {
+    width:100%;    
+    margin: 0 0 15px;
+    font-size: 23px;
+}
+/* Style de la page de detail d'un Film */ 
+.movieDetail{
+    background-color: #1a1a1a;
+}
+/* Style du bandeau rouge en haut */
+.redBanner{
+    width: 100%;
+    height: 100px;
+    background: rgb(204,0,38);
+    background: linear-gradient(180deg, rgba(204,0,38,1) 0%, rgba(102,0,19,1) 100%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+.redBanner .container{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+}
+/* Style du bouton de retour */
+.redBanner a{
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:0;
+  }
+.redBanner a:hover, .redBanner a:focus{
+    background-color: #ffffff1a;
+    box-shadow: inset 0 0 5px 1px white;
+    text-shadow: 0 0 5px white;
+  }
+/* Style du titre du film */
+.redBanner h1{      
+    font-size: 30px;
+    text-align: center;
+  } 
+/* Style des informations du film */
+.movieInformation{
+    margin: 40px 0;
+}
+/* Style de l'affiche du film */
+.movieInformation figcaption{
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: black;
+}
+.movieInformation figcaption img{
+    width:100%
+}
+/* Style du bouton de suppression */
+.movieController{
+    display : flex;
+    justify-content: space-between; 
+    flex-flow: row nowrap;
+ }
+ .movieController button{
+     padding : 15px;
+     width: 100%;
+     box-sizing: border-box;
+     background-color: transparent;    
+     font-size: 16px;
+ }
+ .btnRed{
+     border : 2px solid #EB0000;
+     border-bottom-right-radius: 12px;
+     border-bottom-left-radius: 12px;
+     color: #EB0000;
+     transition: 0.3s;
+     text-align: center;
+     text-decoration: none;
+ }
+ .btnRed:hover, .btnRed:focus{
+     background-color: #EB00001a;
+     box-shadow: inset 0 0 5px 1px #EB0000;
+     text-shadow: 0 0 5px #EB0000;
+ }
+ .btnGreen{
+    border: 2px solid #00A205;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: #00A205;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+.btnGreen:hover, .btnGreen:focus{
+    background-color: #00A2051a;
+    box-shadow: inset 0 0 5px 1px #00A205;
+    text-shadow: 0 0 5px #00A205;
+}
+/* Style de la description du film */
+.movieInformation article{
+    width: 500px;
+    margin-left: 60px;
+    font-size: 20px
+}
+/* Style bandeau pour les acteur du film */
+.movieCasting{
+    background: rgb(204,0,38);
+    background: linear-gradient(180deg, rgba(204,0,38,1) 0%, rgba(102,0,19,1) 100%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+.movieCasting .container{
+    justify-content: space-around;
+}
+/* Style bandeau pour les films similaire du film */
+.movieRelated .container{
+    justify-content: space-around;
+}
+/* Ajustement pour la version mobile */
+ @media screen and (max-width: 640px){
+    .container{
+        width:90%;
+    }
+    .redBanner .container{
+        width:70%;
+        position: unset;
+    }
+    .redBanner h1{
+        font-size: 25px;
+    }
+    .redBanner a{
+        margin-left: 10px;
+    }
+    .movieInformation{
+        margin: 0;
+    }
+    .movieInformation article{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+  }

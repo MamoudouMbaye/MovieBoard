@@ -1,0 +1,29 @@
+/* Style d'une carte acteur */
+.actorCard{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Style de la photo de profile de 'lacteur */
+.actorCard figure{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;    
+    box-shadow: 0px 0 10px black;
+}
+.actorCard img{
+    width: 150px;
+    position: absolute;
+    top: -50%;
+    transform: translateY(20%);
+}
+/* Style du nom et du rôle de 'lacteur */
+.actorCard p{
+    margin:5px 0;    
+    text-shadow: 0 0 5px black;
+    font-size: 18px;
+    text-align: center;
+}

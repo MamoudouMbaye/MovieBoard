@@ -1,0 +1,117 @@
+/* Style des carte de film */
+.movieCard{
+    width: 400px;
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px 10px;
+}
+/* Style de l'entête de la carte de film */
+.movieHead {
+    position: relative;
+    height: 544px;
+    overflow: hidden;
+}
+.movieHead img{
+    width: 100%;
+}
+/* Style de la description déroulante */
+.movieDescription{
+    position: absolute;
+    top : 464px;
+    height: 380px;
+    transition: 0.8s ease-in-out;
+}
+.bckgrndBlur{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    top:0
+}
+.textDescription{    
+    color: white;
+    position : relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+/* Style du titre du film */
+.textDescription h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 26px 0;
+}
+/* Style du synopsis du film */
+.textDescription p{
+    padding :15px;    
+    max-height: 150px;
+    overflow: hidden;
+}
+/* Style du bouton en savoir plus */
+.textDescription a{
+    margin:15px;
+    padding: 15px;
+    border : 1px solid white;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s
+}
+.textDescription a:hover, .textDescription a:focus{
+    background-color: #ffffff1a;
+    box-shadow: inset 0 0 5px 1px white;
+    text-shadow: 0 0 5px white;
+}
+.movieHead:hover .movieDescription{
+    top: 164px;
+}
+/* Style des informations des films */
+.movieInformations{
+    color : white;
+    padding: 10px;
+    font-size: 18px;
+}
+/* Style du bouton de suppression */
+.movieController{
+   display : flex;
+   justify-content: space-between; 
+   flex-flow: row nowrap;
+}
+.movieController button{
+    padding : 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;    
+    font-size: 16px;
+}
+.btnRed{
+    border : 2px solid #EB0000;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: #EB0000;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+.btnRed:hover, .btnRed:focus{
+    background-color: #EB00001a;
+    box-shadow: inset 0 0 5px 1px #EB0000;
+    text-shadow: 0 0 5px #EB0000;
+}
+.btnGreen{
+    border: 2px solid #00A205;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: #00A205;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+.btnGreen:hover, .btnGreen:focus{
+    background-color: #00A2051a;
+    box-shadow: inset 0 0 5px 1px #00A205;
+    text-shadow: 0 0 5px #00A205;
+}

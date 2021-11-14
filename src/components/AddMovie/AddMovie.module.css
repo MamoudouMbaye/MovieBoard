@@ -1,0 +1,119 @@
+/* Style du bandeau rouge */
+.redBanner{
+    width: 100%;
+    height: 100px;
+    background: rgb(204,0,38);
+    background: linear-gradient(180deg, rgba(204,0,38,1) 0%, rgba(102,0,19,1) 100%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+}
+.redBanner .container{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    position:relative;
+}
+/* Style du bouton de retour */
+.redBanner a{
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:0;
+  }
+.redBanner a:hover, .redBanner a:focus{
+    background-color: #ffffff1a;
+    box-shadow: inset 0 0 5px 1px white;
+    text-shadow: 0 0 5px white;
+  }
+/* Style du formulaire de recherche */
+.redBanner form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Style de l'input de recherhce */
+.redBanner form input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    margin: 5px 15px;
+    color: white ;
+    transition: 0.3s;    
+    width: 150px;
+}
+.redBanner form input::placeholder{
+    color: white;
+    opacity: 1;
+}
+.redBanner form input:focus{
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+/* Style du bouton de recherche */
+.redBanner form button{
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
+.redBanner form button:hover{
+    cursor: pointer;
+    background-color: #ffffff1a;
+    box-shadow: inset 0 0 5px 1px white;
+    text-shadow: 0 0 5px white;
+}
+.redBanner form button:focus{
+    outline: none;
+    background-color: #ffffff1a;
+    box-shadow: inset 0 0 5px 1px white;
+    text-shadow: 0 0 5px white;
+}
+/* Style de section des films trouvé par la recherche*/
+.movieList{
+    background-color: #1a1a1a;
+    min-height: calc(100vh - 390px);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+/* Ajustement pour la version mobile */
+@media screen and (max-width: 640px){
+    .redBanner{
+        height: 250px;
+    }
+    .redBanner .container{
+        justify-content: center;
+    }
+    .redBanner .container{
+        width:70%;
+        position: unset;
+    }
+    .redBanner a{
+        margin-left: 10px;
+    }
+    .redBanner form{
+        margin-bottom: 15px;
+    }
+    .redBanner form input{
+        width: 100%;
+    }
+  }
