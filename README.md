@@ -1,3 +1,15 @@
+Application de bibliothèque de films dans le cadre d'un projet pour l'école multimédia. Contient les fonctions suivantes :  
+
+Page d'accueil : Liste de tous les films avec des filtres Titre, Genre et Date de sortie.  
+
+Page Film : Tout les informations sur le film Titre, Date de sortie, Genre, Synopsis, le casting et les films similaires.  
+
+Page d'ajout : Interroge l'API TheMovieDatabase avec une titre et une date de sortie pour l'ajouter pré-rempli dans notre base de données.  
+
+/Page de modification : Reprends toute les informations du films dans notre base et permet de modifier les données./ EN COURS  
+
+Suppression d'un film : Depuis la page d'accueil et les pages film on peut supprimer le film souhaités avec fenêtre pop-up de confirmation .
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
